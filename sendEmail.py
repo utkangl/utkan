@@ -4,7 +4,7 @@ import getpass # takes password input in an invisible and safer way
 smtp_object = smtplib.SMTP('smtp.gmail.com',587) 
 smtp_object.ehlo() 
 # this ehlo function greets the server; we used 587 , it means we used tls encryption 
-#so we have to initialize the server with starttls function. İf we were to used 465
+# so we have to initialize the server with starttls function. İf we were to used 465
 # that would means that the mail is not encrypted and we dont need to use starttls function
 
 smtp_object.starttls()
